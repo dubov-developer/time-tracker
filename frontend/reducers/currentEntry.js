@@ -1,8 +1,7 @@
 import { INIT, START_ENTRY, ADD_ENTRY, EDIT_ENTRY } from '../constants/actionsTypes.js';
 import { Map, List } from 'immutable';
 
-const currentEntryDefault = Map({
-});
+const currentEntryDefault = Map();
 
 export default function currentEntry(state = currentEntryDefault, action) {
   switch(action.type) {
