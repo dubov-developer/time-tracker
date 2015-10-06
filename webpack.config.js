@@ -27,6 +27,7 @@ module.exports = {
       'node_modules',
     ]
   },
+  devtool : '#inline-source-map',
   plugins: [
     //new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),

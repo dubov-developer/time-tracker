@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "react": "^0.13.3"
+    "immutable": "^3.7.5",
+    "react": "^0.13.3",
+    "redux": "^3.0.2"
   }
 }
