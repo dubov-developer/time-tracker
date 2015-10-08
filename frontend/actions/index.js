@@ -3,7 +3,7 @@ import * as types from '../constants/actionsTypes.js';
 export function init(data) {
   return {
     type: types.INIT,
-    data: data
+    payload: data
   }
 }
 

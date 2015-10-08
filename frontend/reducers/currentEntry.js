@@ -5,9 +5,10 @@ const currentEntryDefault = Map();
 
 export default function currentEntry(state = currentEntryDefault, action) {
   switch(action.type) {
+    case INIT:
+      return state;
     case START_ENTRY:
       return  state.merge(action.data);
-      break;
     case ADD_ENTRY:
       return state.clear();
     default:

@@ -5,8 +5,10 @@ const currentEntriesDefault = List.of();
 
 export default function currentEntries(state = currentEntriesDefault , action) {
   switch(action.type) {
+    case INIT:
+      return state.merge(action.payload.get('currentEntries'));
     case ADD_ENTRY:
-      state.push(action.data);
+      return state.push(action.data);
     default:
       return state;
   }
